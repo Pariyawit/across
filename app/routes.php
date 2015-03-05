@@ -17,3 +17,17 @@ Route::get('/', function()
 
 	return View::make('index');
 });
+
+Route::get('/search', function()
+{
+	// return View::make('hello');
+
+	return View::make('result');
+});
+
+Route::get('/detail', function()
+{
+	// return View::make('hello');
+
+	return View::make('detail');
+});

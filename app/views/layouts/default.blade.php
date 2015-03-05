@@ -9,26 +9,46 @@
 		<meta name="author" content="">
 		<link rel="icon" href="../../favicon.ico">
 
-		<title>Cover Template for Bootstrap</title>
+		<title>ACROSS</title>
 
 		<!-- Bootstrap core CSS -->
+		
+		<link href="assets/css/across.css" rel="stylesheet">
 		<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
-		{{ HTML::style('assets/css/bootstrap.min.css') }}
-		<!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet"> -->
 
 	</head>
 
 	<body>
-		@yield('content')
 
-		<!-- Bootstrap core JavaScript
-		================================================== -->
-		<!-- Placed at the end of the document so the pages load faster -->
-		{{ HTML::script('assets/js/bootstrap.min.js') }}
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-		<script src="assets/js/bootstrap.min.js"></script>
-		<script src="assets/js/docs.min.js"></script>
+		<div class="container">
+
+			<div class="masthead">
+				<h3 class="text-muted">{{ HTML::link('/', 'ACROSS')}}</h3>
+				<!-- <nav>
+					<ul class="nav nav-justified">
+						<li class="active"><a href="#">Home</a></li>
+						<li><a href="#">Projects</a></li>
+						<li><a href="#">Services</a></li>
+						<li><a href="#">Downloads</a></li>
+						<li><a href="#">About</a></li>
+						<li><a href="#">Contact</a></li>
+					</ul>
+				</nav> -->
+			</div>
+
+
+			<!-- Example row of columns -->
+			@yield('content')
+
+			<!-- Site footer -->
+			<footer class="footer">
+				<p>&copy; Company 2014</p>
+			</footer>
+
+		</div> <!-- /container -->
+
+
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-		<script src="assets/js/ie10-viewport-bug-workaround.js"></script>
+		<script src="/assets/js/bootstrap.min.js"></script>
 	</body>
 </html>
