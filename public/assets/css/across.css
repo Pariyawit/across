@@ -1,9 +1,15 @@
 @import "bootstrap.min.css";
 
+/*http://colorschemedesigner.com/csd-3.5/#0u21Tw0w0w0w0*/
+
 th {
 	text-align: center;
 }
 
 td {
 	text-align: center;
+}
+
+.input-large{
+	width: 100%
 }

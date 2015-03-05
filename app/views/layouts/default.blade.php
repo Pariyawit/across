@@ -23,17 +23,24 @@
 		<div class="container">
 
 			<div class="masthead">
-				<h3 class="text-muted">{{ HTML::link('/', 'ACROSS')}}</h3>
-				<!-- <nav>
-					<ul class="nav nav-justified">
-						<li class="active"><a href="#">Home</a></li>
-						<li><a href="#">Projects</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Downloads</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Contact</a></li>
-					</ul>
-				</nav> -->
+				<nav class="navbar navbar-default" role="navigation">
+						<div class="navbar-header">
+								<a class="navbar-brand" href="/">ACROSS</a>
+						</div>
+						<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+								<div class="col-sm-6 col-md-6">
+										<form class="navbar-form" role="search">
+										{{Form::open}}
+												<div class="input-group input-large">
+														<input type="text" class="form-control input-large" placeholder="hotel name, city, country" name="q">
+														<div class="input-group-btn">
+																<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+														</div>
+												</div>
+										</form>
+								</div>        
+						</div>
+				</nav>
 			</div>
 
 
