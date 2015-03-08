@@ -85,11 +85,11 @@ return array(
 
         'mongodb' => array(
             'driver'   => 'mongodb',
-            'host'     => 'localhost',
-            'port'     => 27017,
+            'host'     => '128.199.109.231',
+            'port'     => 9999,
             'username' => '',
             'password' => '',
-            'database' => 'across'
+            'database' => 'Scrapy_Reviews'
         ),
 
     ),

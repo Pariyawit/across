@@ -27,10 +27,9 @@
 						<div class="navbar-header">
 								<a class="navbar-brand" href="/">ACROSS</a>
 						</div>
-						<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+						{{-- <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
 								<div class="col-sm-6 col-md-6">
 										<form class="navbar-form" role="search">
-										{{Form::open}}
 												<div class="input-group input-large">
 														<input type="text" class="form-control input-large" placeholder="hotel name, city, country" name="q">
 														<div class="input-group-btn">
@@ -39,7 +38,7 @@
 												</div>
 										</form>
 								</div>        
-						</div>
+						</div> --}}
 				</nav>
 			</div>
 

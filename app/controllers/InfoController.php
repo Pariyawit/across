@@ -41,7 +41,7 @@ class InfoController extends \BaseController {
 			$result['tripadvisor'] = '-';
 
 			$ratings = Rating::getTotalRating($info['title']);
-
+			
 			$sum = 0;
 			$count = 0;
 			foreach ($ratings as $rating) {
@@ -63,7 +63,7 @@ class InfoController extends \BaseController {
 			// $tmp = Average::getAverageTotalRating($info->title);
 			// $result['average'] = Average::getAverageTotalRating($info->title);
 			$result['average'] = $sum/$count;
-
+			
 			array_push($results,$result);
 		}
 

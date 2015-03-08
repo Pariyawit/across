@@ -13,21 +13,9 @@
 
 Route::get('/', function()
 {
-	// return View::make('hello');
-
 	return View::make('index');
 });
 
-Route::get('/search', function()
-{
-	// return View::make('hello');
+Route::get('/search','InfoController@search');
 
-	return View::make('result');
-});
-
-Route::get('/detail', function()
-{
-	// return View::make('hello');
-
-	return View::make('detail');
-});
+Route::get('/detail','SummaryController@show');
