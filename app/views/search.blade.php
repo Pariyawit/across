@@ -42,7 +42,7 @@
 				<td>{{ $result['booking'] }}</td>
 				<td>{{ $result['agoda'] }}</td>
 				<td>{{ $result['tripadvisor'] }}</td>
-				<td>{{ $result['average'] }}</td>
+				<td>{{ number_format($result['average'],2) }}</td>
 			</tr>
 			@endforeach
 		</tbody>

@@ -13,3 +13,7 @@ td {
 .input-large{
 	width: 100%
 }
+
+li.summary{
+	text-align: left;
+}
