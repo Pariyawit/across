@@ -127,7 +127,7 @@ class InfoController extends \BaseController {
 		// }
 		// array_multisort($average, SORT_DESC, $results);
 		// return $results;
-		return View::make('search',['results'=>$results,'search'=>$search]);
+		return View::make('search',['results'=>$results,'search'=>$input['search']]);
 	}
 
 	public function show()

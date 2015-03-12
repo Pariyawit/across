@@ -17,3 +17,21 @@ td {
 li.summary{
 	text-align: left;
 }
+
+body {
+	background: #009999;
+}
+
+.jumbotron {
+	background: #FFFFFF;
+}
+
+.navbar {
+	background-color: #FF7400;
+	border: none;
+	color: #FFFFFF;
+}
+
+.navbar-default .navbar-brand{
+	color: #FFFFFF;
+}
