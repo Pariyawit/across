@@ -8,6 +8,7 @@
 		<meta name="description" content="">
 		<meta name="author" content="">
 		<link rel="icon" href="assets/pic/rilakkuma.jpg">
+		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 
 		<title>ACROSS</title>
 
@@ -19,15 +20,28 @@
 	</head>
 
 	<body>
-
-		<div class="container">
-
-			<div class="masthead">
-				<nav class="navbar navbar-default" role="navigation">
-						<div class="navbar-header">
-								<a class="navbar-brand" href="/">ACROSS</a>
-						</div>
-						{{-- <div class="navbar-collapse" id="bs-example-navbar-collapse-1">
+		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+			<div class="container">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<a class="navbar-brand" href="/">ACROSS</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				{{-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li>
+							<a href="#">About</a>
+						</li>
+						<li>
+							<a href="#">Services</a>
+						</li>
+						<li>
+							<a href="#">Contact</a>
+						</li>
+					</ul>
+				</div> --}}
+				<!-- /.navbar-collapse -->
+				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
 								<div class="col-sm-6 col-md-6">
 										<form class="navbar-form" role="search">
 												<div class="input-group input-large">
@@ -38,10 +52,14 @@
 												</div>
 										</form>
 								</div>        
-						</div> --}}
-				</nav>
+						</div>
 			</div>
+			<!-- /.container -->
+		</nav>
 
+
+		<div class="container">
+			<div class="space"></div>
 
 			<!-- Example row of columns -->
 			@yield('content')

@@ -2,8 +2,10 @@
 
 @section('content')
 
-<div class="jumbotron">
-	<h2>ACRoSS : ACcomodation Review Summarization System!</h2>
+<h2 class="index horizontal-center">ACROSS : Accomodation Review Summarization System!</h2>
+
+<div class="index jumbotron transparent">
+	{{-- <h2>ACRoSS : ACcomodation Review Summarization System!</h2> --}}
 	<div class="row search">
 		<div class="col-sm-8 col-sm-offset-2">
 		{{ Form::open(['url' => 'search','method' => 'get']) }}

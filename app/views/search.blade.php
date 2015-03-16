@@ -2,8 +2,8 @@
 
 @section('content')
 
-<div class="jumbotron">
-	<div class="row search">
+<div class="jumbotron search">
+	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 		{{ Form::open(['url' => 'search','method' => 'get']) }}
 			<div class="input-group">
@@ -20,21 +20,24 @@
 		<div class="col-sm-4">
 			<h3>Search result for : "{{ $search }}"</h3>
 		</div>
-		<table class="table table-hover">
+		<table class="table table-hover result">
 		<thead>
 			<tr>
-				<th>Hotel Name</th>
-				<th>City</th>
-				<th>Booking</th>
-				<th>Agoda</th>
-				<th>TripAdvisor</th>
-				<th>ACROSS</th>
+				<th>HOTEL</th>
+				<th class="city">CITY</th>
+				{{-- <th>Booking</th> --}}
+				<th><img src="/assets/pic/booking.jpg"></th>
+				<th><img src="/assets/pic/agoda.png"></th>
+				<th><img src="/assets/pic/tripadvisor.jpg"></th>
+				{{-- <th>Agoda</th> --}}
+				{{-- <th>TripAdvisor</th> --}}
+				<th id="logo">ACROSS</th>
 			</tr>
 		</thead>
 		<tbody>
 			@foreach ($hotels as $hotel)
 			<tr>
-				<td>
+				<td class="hotelname">
 					<h4>{{ HTML::link('detail?hotel='.$hotel['title'], $hotel['name'])}}</h4>
 					{{ $hotel['address'] }}
 				</td>
@@ -42,7 +45,7 @@
 				<td>{{ $hotel['booking'] }}</td>
 				<td>{{ $hotel['agoda'] }}</td>
 				<td>{{ $hotel['tripadvisor'] }}</td>
-				<td>{{ number_format($hotel['average'],2) }}</td>
+				<td class="across">{{ number_format($hotel['average'],2) }}</td>
 			</tr>
 			@endforeach
 		</tbody>

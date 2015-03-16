@@ -19,19 +19,167 @@ li.summary{
 }
 
 body {
-	background: #009999;
+	/*background: #009999;*/
+	background-image: url('../pic/bg-1.jpg');
+	/*background-image: url('../pic/pattern-white.jpg');*/
+	background-size:   cover;
+	background-repeat: no-repeat;
+	background-position: center center; 
+}
+
+.jumbotron.transparent{
+	background: rgba(200,200,200,0.7);
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.horizontal-center {
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .jumbotron {
-	background: #FFFFFF;
+	/*background: #FFFFFF;*/
+	background: rgba(255,255,255,0.95);
 }
 
 .navbar {
-	background-color: #FF7400;
+	background-color: #183794;
 	border: none;
-	color: #FFFFFF;
 }
 
-.navbar-default .navbar-brand{
+.navbar-header .navbar-brand{
 	color: #FFFFFF;
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Raleway', sans-serif;
+	font-size: 30px;
+}
+
+.space{
+	height: 80px;
+}
+
+h2.index{
+	/*font-family: 'Lobster', cursive;*/
+	font-family: 'Raleway', sans-serif;
+	color: #FFFFFF;
+	font-weight: 400;
+	font-size: 2.5em;
+	padding-bottom: 30px;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.hotel h3{
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	font-size: 2.5em;
+}
+
+.hotel h4{
+	font-family: 'Raleway', sans-serif;
+	font-size: 2em;
+}
+
+.hotel th{
+	font-size: 1em;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+}
+
+.hotel .topic{
+	vertical-align: middle;
+	font-family: 'Raleway', sans-serif;
+	/*font-weight: bold;*/
+	font-size: 2vw;
+	width: 25%;
+}
+
+.hotel .score{
+	vertical-align: middle;
+	font-size: 2.5vw;
+	font-weight: 100;
+	font-family: 'Raleway', sans-serif;
+	width: 15%;
+}
+
+.hotel td{
+	font-family: 'Raleway', sans-serif;
+}
+
+.hotel li{
+	padding: 3px;
+	font-style: italic;
+	list-style: none;
+}
+
+.hotel li:before{
+	content: '"';
+	font-size: 1em;
+}
+
+.hotel li:after{
+	content: '"';
+	font-size: 1em;
+}
+
+
+.search{
+	font-family: 'Raleway', sans-serif;
+}
+
+.search .result td{
+	vertical-align: middle;
+}
+
+.search thead{
+	/*background-color: #CCCCCC;*/
+	border-bottom: solid #183794;
+	border-top: solid #183794;
+
+}
+
+.search .result th{
+	padding: 0;
+	background-color: #FFFFFF;
+}
+
+.search th.hotelname{
+	width: 50%;
+}
+
+.search th.across{
+	font-size: 2em;
+	width:10%;
+}
+
+.search th.city{
+	width: 15%;
+}
+
+.search img{
+	width: 100px;
+	height: auto;
+	padding: 1px 1px;
+}
+
+.search .result th{
+	font-size: 1.5em;
+	vertical-align: middle;
+	font-weight: normal;
+}
+
+#logo{
+	/*width: 100px;*/
+	height: 100px;
+	border: solid #FFFFFF;
+	background-color: #183794;
+	color: #FFFFFF;
+	vertical-align: middle;
+	font-weight: normal;
 }

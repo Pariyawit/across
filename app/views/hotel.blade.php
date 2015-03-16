@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="jumbotron">
+<div class="hotel jumbotron">
 {{-- <div class="container"> --}}
 	<div class="row">
 		<h3>{{$info['name']}}</h3>
@@ -10,17 +10,18 @@
 	</div>
 	<div class="row">
 		<table class="table">
-		<thead>
+{{-- 		<thead>
 			<tr>
 				<th>Topic</th>
 				<th>Average Score</th>
 				<th>Summary of Reviews</th>
 			</tr>
-		</thead>
+		</thead> --}}
 		<tbody>
 			<tr>
-				<td>Cleanliness</td>
-				<td>{{ number_format($scores['cleanliness'],2);}}</td>
+				{{-- <td class="topic">Cleanliness</td> --}}
+				<td class="topic">CLEANLINESS</h4></td>
+				<td class="score">{{ number_format($scores['cleanliness'],2);}}</td>
 				<td>
 					<ul>
 						@foreach ($summary['cleanliness'] as $s)
@@ -32,8 +33,8 @@
 				</td>				
 			</tr>
 			<tr>
-				<td>Comfort</td>
-				<td>{{ number_format($scores['comfort'],2);}}</td>
+				<td class="topic">COMFORT</h4></td>
+				<td class="score">{{ number_format($scores['comfort'],2);}}</td>
 				<td>
 					<ul>
 						@foreach ($summary['comfort'] as $s)
@@ -45,8 +46,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Location</td>
-				<td>{{ number_format($scores['location'],2);}}</td>
+				<td class="topic">LOCATION</h4></td>
+				<td class="score">{{ number_format($scores['location'],2);}}</td>
 				<td>
 					<ul>
 						@foreach ($summary['location'] as $s)
@@ -58,8 +59,8 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Staff</td>
-				<td>{{ number_format($scores['staff'],2);}}</td>
+				<td class="topic">STAFF</td>
+				<td class="score">{{ number_format($scores['staff'],2);}}</td>
 				<td>
 					<ul>
 						@foreach ($summary['staff'] as $s)
@@ -71,8 +72,9 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Value for Money</td>
-				<td>{{ number_format($scores['value'],2);}}</td>
+				{{-- <td class="topic">Value for Money</td> --}}
+				<td class="topic">VALUE FOR MONEY</td>
+				<td class="score">{{ number_format($scores['value'],2);}}</td>
 				<td>
 					<ul>
 						@foreach ($summary['value'] as $s)
