@@ -32,17 +32,17 @@
 			</tr>
 		</thead>
 		<tbody>
-			@foreach ($results as $result)
+			@foreach ($hotels as $hotel)
 			<tr>
 				<td>
-					<h4>{{ HTML::link('detail?hotel='.$result['title'], $result['name'])}}</h4>
-					{{ $result['address'] }}
+					<h4>{{ HTML::link('detail?hotel='.$hotel['title'], $hotel['name'])}}</h4>
+					{{ $hotel['address'] }}
 				</td>
-				<td>{{ $result['city'] }}</td>
-				<td>{{ $result['booking'] }}</td>
-				<td>{{ $result['agoda'] }}</td>
-				<td>{{ $result['tripadvisor'] }}</td>
-				<td>{{ number_format($result['average'],2) }}</td>
+				<td>{{ $hotel['city'] }}</td>
+				<td>{{ $hotel['booking'] }}</td>
+				<td>{{ $hotel['agoda'] }}</td>
+				<td>{{ $hotel['tripadvisor'] }}</td>
+				<td>{{ number_format($hotel['average'],2) }}</td>
 			</tr>
 			@endforeach
 		</tbody>
