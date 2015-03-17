@@ -24,7 +24,8 @@ body {
 	/*background-image: url('../pic/pattern-white.jpg');*/
 	background-size:   cover;
 	background-repeat: no-repeat;
-	background-position: center center; 
+	background-attachment: fixed;
+	/*background-position: center center; */
 }
 
 .jumbotron.transparent{
@@ -60,19 +61,41 @@ body {
 	font-size: 30px;
 }
 
+.search-nav{
+	padding-top: 7.5px;
+}
+
 .space{
 	height: 80px;
 }
 
-h2.index{
-	/*font-family: 'Lobster', cursive;*/
+h1.index{
 	font-family: 'Raleway', sans-serif;
 	color: #FFFFFF;
 	font-weight: 400;
+	font-size: 6em;
+	text-align: center;
+
+}
+
+h2.index{
+	/*font-family: 'Raleway', sans-serif;*/
+	font-family: 'Open Sans Condensed', sans-serif;
+	/*font-family: "Courier New", Courier, monospace;*/
+	color: rgba(255,255,255,0.8);
+	font-weight: lighter;
+	position: relative;
+	top: -15px;
+/*	margin-top: 0;
+	padding-top: 0;*/
+	text-align: center;
 	font-size: 2.5em;
 	padding-bottom: 30px;
-	margin-top: auto;
-	margin-bottom: auto;
+	font-style: italic;
+}
+
+.index .search button{
+	height: 46px;
 }
 
 .hotel h3{
@@ -175,8 +198,7 @@ h2.index{
 }
 
 #logo{
-	/*width: 100px;*/
-	height: 100px;
+	width: 100px;
 	border: solid #FFFFFF;
 	background-color: #183794;
 	color: #FFFFFF;

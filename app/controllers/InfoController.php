@@ -4,28 +4,31 @@ class InfoController extends \BaseController {
 
 	public function search(){
 		$input = Input::all();
-		$searchs = explode(' ', $input['search']);
-		
+		$searchs = $input['search'];
 		$hotels = []; //to save data
 		
-		foreach ($searchs as $search) {
-			$query = AverageCopy::getSearch($search);
-			foreach ($query as $q) {
-				$title = $q['_id'];
-				$q['title'] = $title;
-				$q['average'] = $q['value']['total_score'];
-				$hotels[$title] = $q;
-			}
+		$hotels = AverageCopy::getSearchs($searchs);
+
+		// foreach ($searchs as $search) {
+		// 	$query = AverageCopy::getSearch($search);
+		// 	foreach ($query as $q) {
+		// 		$title = $q['_id'];
+		// 		$q['title'] = $title;
+		// 		$q['average'] = $q['value']['total_score'];
+		// 		$hotels[$title] = $q;
+		// 	}
+		// }
+
+		if($hotels == null){
+			return View::make('search',['hotels'=>$hotels,'search'=>$input['search']]);
 		}
 
-		// var_dump($hotels);
-
-		// return $hotels;
 		foreach ($hotels as $key => $row)
 		{
-			$average[$key] = $row['value']['total_score'];
+			$sort['average'][$key] = $row['value']['total_score'];
+			$sort['count'][$key] = $row['count'];
 		}
-		array_multisort($average, SORT_DESC, $hotels);
+		array_multisort($sort['count'],SORT_DESC,$sort['average'], SORT_DESC,$hotels);
 
 		$lim = 0;
 		$hotels_tmp = $hotels;

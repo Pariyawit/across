@@ -18,12 +18,13 @@
 	</div>
 	<div class="row">
 		<div class="col-sm-4">
-			<h3>Search result for : "{{ $search }}"</h3>
+			<h3>Search result for :</h3>
+				<h3>&nbsp;&nbsp;&nbsp;"{{ $search }}"</h3>
 		</div>
 		<table class="table table-hover result">
 		<thead>
 			<tr>
-				<th>HOTEL</th>
+				<th class="hotelname">HOTEL</th>
 				<th class="city">CITY</th>
 				{{-- <th>Booking</th> --}}
 				<th><img src="/assets/pic/booking.jpg"></th>

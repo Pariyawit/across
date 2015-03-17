@@ -2,7 +2,9 @@
 
 @section('content')
 
-<h2 class="index horizontal-center">ACROSS : Accomodation Review Summarization System!</h2>
+<h1 class="index">ACROSS<h1>
+	<h2 class="index">Accomodation Review Summarization System</h2>
+	{{-- <h2 class="index">ACCOMODATION REVIEW SUMMARIZATION SYSTEM</h2> --}}
 
 <div class="index jumbotron transparent">
 	{{-- <h2>ACRoSS : ACcomodation Review Summarization System!</h2> --}}

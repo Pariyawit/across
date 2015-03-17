@@ -9,6 +9,7 @@
 		<meta name="author" content="">
 		<link rel="icon" href="assets/pic/rilakkuma.jpg">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
 
 		<title>ACROSS</title>
 
@@ -20,37 +21,26 @@
 	</head>
 
 	<body>
-		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/">ACROSS</a>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				{{-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li>
-							<a href="#">About</a>
-						</li>
-						<li>
-							<a href="#">Services</a>
-						</li>
-						<li>
-							<a href="#">Contact</a>
-						</li>
-					</ul>
-				</div> --}}
+				
 				<!-- /.navbar-collapse -->
 				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-								<div class="col-sm-6 col-md-6">
-										<form class="navbar-form" role="search">
-												<div class="input-group input-large">
-														<input type="text" class="form-control input-large" placeholder="hotel name, city, country" name="q">
-														<div class="input-group-btn">
-																<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
-														</div>
-												</div>
-										</form>
+								<div class="col-sm-6 col-md-6 search-nav">
+										{{ Form::open(['url' => 'search','method' => 'get']) }}
+												<div class="input-group">
+												 		{{Form::text('search','',["class"=>"form-control"])}}
+												 		<span class="input-group-btn">
+													 		{{Form ::button('<span class="glyphicon glyphicon-search">',
+													 				["type" => "submit","class" => "btn btn-default"])}}
+												 		</span>
+											 	</div>
+										{{ Form::close() }}
 								</div>        
 						</div>
 			</div>
