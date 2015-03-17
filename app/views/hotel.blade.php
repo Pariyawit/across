@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="hotel jumbotron">
+<div class="hotel jumbotron wow fadeIn">
 {{-- <div class="container"> --}}
 	<div class="row">
 		<h3>{{$info['name']}}</h3>

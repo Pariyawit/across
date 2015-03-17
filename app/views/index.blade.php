@@ -2,11 +2,12 @@
 
 @section('content')
 
-<h1 class="index">ACROSS<h1>
-	<h2 class="index">Accomodation Review Summarization System</h2>
+{{-- <div class="wow slideInUp"> --}}
+<h1 class="index wow slideInUp" data-wow-duration="2s">ACROSS<h1>
+	<h2 class="index wow slideInUp" data-wow-duration="2s">Accomodation Review Summarization System</h2>
 	{{-- <h2 class="index">ACCOMODATION REVIEW SUMMARIZATION SYSTEM</h2> --}}
-
-<div class="index jumbotron transparent">
+<div>
+<div class="index jumbotron transparent wow fadeIn">
 	{{-- <h2>ACRoSS : ACcomodation Review Summarization System!</h2> --}}
 	<div class="row search">
 		<div class="col-sm-8 col-sm-offset-2">

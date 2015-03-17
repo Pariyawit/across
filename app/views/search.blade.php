@@ -2,7 +2,7 @@
 
 @section('content')
 
-<div class="jumbotron search">
+<div class="jumbotron search wow fadeIn">
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 		{{ Form::open(['url' => 'search','method' => 'get']) }}

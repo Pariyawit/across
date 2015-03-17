@@ -10,18 +10,19 @@
 		<link rel="icon" href="assets/pic/rilakkuma.jpg">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
-
+		
 		<title>ACROSS</title>
 
 		<!-- Bootstrap core CSS -->
 		
 		<link href="assets/css/across.css" rel="stylesheet">
+		<link rel="stylesheet" href="assets/css/animate.css">
 		<!-- <link href="assets/css/bootstrap.min.css" rel="stylesheet"> -->
 
 	</head>
 
 	<body>
- 		<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+ 		<nav class="navbar navbar-inverse navbar-fixed-top wow fadeInDown" role="navigation">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -64,5 +65,9 @@
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 		<script src="/assets/js/bootstrap.min.js"></script>
+		<script src="/assets/js/wow.min.js"></script>
+		<script>
+		 	new WOW().init();
+		</script>
 	</body>
 </html>
