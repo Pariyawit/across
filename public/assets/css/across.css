@@ -20,7 +20,7 @@ li.summary{
 
 body {
 	/*background: #009999;*/
-	background-image: url('../pic/bg-1.jpg');
+	/*background-image: url('../pic/bg-1.jpg');*/
 	/*background-image: url('../pic/pattern-white.jpg');*/
 	background-size:   cover;
 	background-repeat: no-repeat;
@@ -170,6 +170,7 @@ h2.index{
 .search .result th{
 	padding: 0;
 	background-color: #FFFFFF;
+	/*background-color: rgba(255,255,255,0.9);*/
 }
 
 .search th.hotelname{
@@ -189,6 +190,7 @@ h2.index{
 	width: 100px;
 	height: auto;
 	padding: 1px 1px;
+	margin-right: 5px;
 }
 
 .search .result th{
@@ -197,9 +199,11 @@ h2.index{
 	font-weight: normal;
 }
 
-#logo{
+.search th#logo{
 	width: 100px;
-	border: solid #FFFFFF;
+	padding-left: 10px;
+	padding-right: 10px;
+	/*border: solid #FFFFFF;*/
 	background-color: #183794;
 	color: #FFFFFF;
 	vertical-align: middle;

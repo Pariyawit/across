@@ -64,10 +64,16 @@
 
 
 		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="/assets/js/jquery.min.js"></script>
 		<script src="/assets/js/bootstrap.min.js"></script>
 		<script src="/assets/js/wow.min.js"></script>
 		<script>
 		 	new WOW().init();
 		</script>
+		<script type="text/javascript">
+ 			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg'];
+ 			$('body').css({'background-image': 'url(assets/'+images[Math.floor(Math.random() * images.length)] + ')'});
+		</script>
+	
 	</body>
 </html>
