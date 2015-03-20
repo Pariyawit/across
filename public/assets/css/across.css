@@ -63,7 +63,8 @@ body {
 }
 
 .search-nav{
-	padding-top: 7.5px;
+	margin-top: 7.5px;
+	margin-bottom: 7.5px;
 }
 
 .space{

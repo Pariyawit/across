@@ -25,28 +25,24 @@
 	<body>
  		<nav class="navbar navbar-inverse navbar-fixed-top wow fadeInDown" role="navigation">
 			<div class="container">
-				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
 					<a class="navbar-brand" href="/">ACROSS</a>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				
-				<!-- /.navbar-collapse -->
+
 				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-								<div class="col-sm-6 col-md-6 search-nav">
-										{{ Form::open(['url' => 'search','method' => 'get']) }}
-												<div class="input-group">
-												 		{{Form::text('search','',["class"=>"form-control"])}}
-												 		<span class="input-group-btn">
-													 		{{Form ::button('<span class="glyphicon glyphicon-search">',
-													 				["type" => "submit","class" => "btn btn-default"])}}
-												 		</span>
-											 	</div>
-										{{ Form::close() }}
-								</div>        
-						</div>
+					<div class="col-sm-6 col-md-6 search-nav">
+						{{ Form::open(['url' => 'search','method' => 'get']) }}
+							<div class="input-group">
+						 		{{Form::text('search','',["class"=>"form-control"])}}
+						 		<span class="input-group-btn">
+							 		{{Form ::button('<span class="glyphicon glyphicon-search">',
+							 				["type" => "submit","class" => "btn btn-default"])}}
+						 		</span>
+						 	</div>
+						{{ Form::close() }}
+					</div>        
+				</div>
 			</div>
-			<!-- /.container -->
 		</nav>
 
 
@@ -72,7 +68,7 @@
 		 	new WOW().init();
 		</script>
 		<script type="text/javascript">
- 			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg','pic/bg-4.jpg','pic/bg-5.jpg'];
+ 			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg','pic/bg-4.jpg','pic/bg-5.jpg','pic/bg-6.jpg'];
  			$('body').css({'background-image': 'url(assets/'+images[Math.floor(Math.random() * images.length)] + ')'});
 		</script>
 	

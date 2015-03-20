@@ -16,6 +16,6 @@ Route::get('/', function()
 	return View::make('index');
 });
 
-Route::get('/search','InfoController@search');
+Route::get('/search','AverageController@search');
 
 Route::get('/detail','SummaryController@show');
