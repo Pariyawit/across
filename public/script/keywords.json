@@ -7,9 +7,7 @@
         "uncontaminating", 
         "brighten", 
         "uninfected", 
-        "flavour", 
-        "dampen",  
-        "smell", 
+        "dampen", 
         "illuminate", 
         "scent", 
         "sluggish", 
@@ -18,10 +16,10 @@
         "dull", 
         "neat", 
         "dirty", 
-        "untidy", 
+        "untidy",
+        "stain", 
         "contaminating", 
         "clear", 
-        "fresh", 
         "muddy"
     ], 
     "comfort": [
@@ -33,7 +31,6 @@
         "disturb", 
         "trouble", 
         "worried", 
-        "convenience", 
         "disorder",
         "displeasure", 
         "cosy",
@@ -51,7 +48,13 @@
         "bother", 
         "delight", 
         "upset", 
-        "pleasure"
+        "pleasure",
+        "big",
+        "large",
+        "small",
+        "wifi",
+        "internet",
+        "facility"
     ], 
     "location": [
         "close",       
@@ -68,7 +71,10 @@
         "far", 
         "position", 
         "distant", 
-        "nearby"
+        "nearby",
+        "subway",
+        "station"
+
     ], 
     "value": [
         "deal", 
@@ -84,7 +90,8 @@
         "inexpensive", 
         "bargain", 
         "value", 
-        "range"
+        "range",
+        "discount"
     ], 
     "staff": [
         "staff",
@@ -95,7 +102,6 @@
         "friendly", 
         "passion", 
         "bonk", 
-        "enjoy", 
         "hire", 
         "duty", 
         "kind", 

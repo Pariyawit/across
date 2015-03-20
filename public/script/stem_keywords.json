@@ -7,9 +7,7 @@
         "uncontamin", 
         "brighten", 
         "uninfect", 
-        "flavour", 
         "dampen", 
-        "smell", 
         "illumin", 
         "scent", 
         "sluggish", 
@@ -19,9 +17,9 @@
         "neat", 
         "dirti", 
         "untidi", 
+        "stain", 
         "contamin", 
         "clear", 
-        "fresh", 
         "muddi"
     ], 
     "comfort": [
@@ -33,7 +31,6 @@
         "disturb", 
         "troubl", 
         "worri", 
-        "conveni", 
         "disord", 
         "displeasur", 
         "cosi", 
@@ -51,7 +48,13 @@
         "bother", 
         "delight", 
         "upset", 
-        "pleasur"
+        "pleasur", 
+        "big", 
+        "larg", 
+        "small", 
+        "wifi", 
+        "internet", 
+        "facil"
     ], 
     "location": [
         "close", 
@@ -68,7 +71,9 @@
         "far", 
         "posit", 
         "distant", 
-        "nearbi"
+        "nearbi", 
+        "subway", 
+        "station"
     ], 
     "value": [
         "deal", 
@@ -84,7 +89,8 @@
         "inexpens", 
         "bargain", 
         "valu", 
-        "rang"
+        "rang", 
+        "discount"
     ], 
     "staff": [
         "staff", 
@@ -95,7 +101,6 @@
         "friend", 
         "passion", 
         "bonk", 
-        "enjoy", 
         "hire", 
         "duti", 
         "kind", 
