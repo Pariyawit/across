@@ -7,7 +7,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta name="description" content="">
 		<meta name="author" content="">
-		<link rel="icon" href="assets/pic/rilakkuma.jpg">
+		{{-- <link rel="icon" href="assets/pic/rilakkuma.jpg"> --}}
+		<link rel="icon" href="assets/pic/across.jpg">
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
 		
@@ -71,7 +72,7 @@
 		 	new WOW().init();
 		</script>
 		<script type="text/javascript">
- 			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg'];
+ 			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg','pic/bg-4.jpg','pic/bg-5.jpg'];
  			$('body').css({'background-image': 'url(assets/'+images[Math.floor(Math.random() * images.length)] + ')'});
 		</script>
 	
