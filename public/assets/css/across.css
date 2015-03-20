@@ -188,9 +188,14 @@ h2.index{
 	width: 15%;
 }
 
+.search th.site{
+	width: 10%;
+}
+
 .search img{
+	/*position: relative;*/
 	width: 100px;
-	height: auto;
+	height: 100px;
 	padding: 1px 1px;
 	margin-right: 5px;
 }
@@ -202,10 +207,10 @@ h2.index{
 }
 
 .search th#logo{
-	width: 100px;
+	width: 15%;
 	padding-left: 10px;
 	padding-right: 10px;
-	/*border: solid #FFFFFF;*/
+	/*font-size: 2.5em;*/
 	background-color: #183794;
 	color: #FFFFFF;
 	vertical-align: middle;
