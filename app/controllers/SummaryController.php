@@ -7,7 +7,8 @@ class SummaryController extends \BaseController {
 	{
 		$input = Input::all();
 		$title = $input['hotel'];
-		$info = Info::where('title', '=', $title)->first();
+		// $info = Info::where('title', '=', $title)->first();
+		$info = Average::getInfo($title);
 		$summary = Summary::getSummary($title);
 
 		$scores = Average::getAverage($title);

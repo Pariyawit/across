@@ -4,12 +4,6 @@ class Average extends Moloquent{
 
 	protected $table = 'avg_total_score';
 
-	public static function getAverageTotalRating($title){
-		$tmp = DB::collection('avg_total_score')->where('_id','=',$title)->first();
-		return $tmp['value']['total_score'];
-	}
-
-	
 	//get unique list of search result
 	//count for matching search word, title appears each time it match the result.
 	//'valid' only the hotel has more than 100 reviews
@@ -51,6 +45,11 @@ class Average extends Moloquent{
 	public static function getAverage($title){
 		$tmp = DB::collection('avg_total_score')->where('_id','=',$title)->first();
 		return $tmp['value'];
+	}
+
+	public static function getInfo($title){
+		$tmp = DB::collection('avg_total_score')->where('_id','=',$title)->first();
+		return $tmp;
 	}
 
 }
