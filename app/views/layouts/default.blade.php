@@ -30,7 +30,7 @@
 				</div>
 
 				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
-					<div class="col-sm-6 col-md-6 search-nav">
+					<div class="col-sm-6 col-md-6" id="search-nav">
 						{{ Form::open(['url' => 'search','method' => 'get']) }}
 							<div class="input-group">
 						 		{{Form::text('search','',["class"=>"form-control"])}}

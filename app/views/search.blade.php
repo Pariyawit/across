@@ -17,16 +17,14 @@
 	  </div>
 	  	<div class="col-sm-12">
 			<h3>Search result for : "{{ $search }}"</h3>
-				{{-- <h3>&nbsp;&nbsp;&nbsp;"{{ $search }}"</h3> --}}
-		</div>
-		<div class="col-sm-6">
-			seach by keywords matched, title, address, city
 		</div>
 	</div>
 </div>
 
 <div class="jumbotron search wow fadeIn">
 	<div class="row">
+		<div id="explain"> Result(s) ordered by the number of matches found and ACROSS score.<br>
+			ACROSS score is an average score from Booking, Agoda, and TripAdvisor.</div>
 		<table class="table table-hover result">
 		<thead>
 			<tr>

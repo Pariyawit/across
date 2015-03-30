@@ -18,7 +18,17 @@ class SummaryController extends \BaseController {
 		if($summary_bold==null){
 			$summary_bold = $summary; 
 		}
-		return View::make('hotel',['info'=>$info, 'summary'=>$summary_bold ,'scores'=>$scores]);
+
+		$fullreview = [];
+		foreach ($summary as $topic) {
+			foreach ($topic as $sentence) {
+				$tmp = Review::getFullReview($title,$sentence);
+				$fullreview[$sentence] = $tmp;
+			}
+		}
+
+		// var_dump($fullreview);
+		return View::make('hotel',['info'=>$info, 'summary'=>$summary_bold ,'scores'=>$scores, 'fullreview'=>$fullreview]);
 	}
 
 	public static function boldKeyword($summary){
