@@ -28,7 +28,8 @@ class SummaryController extends \BaseController {
 		}
 
 		// var_dump($fullreview);
-		return View::make('hotel',['info'=>$info, 'summary'=>$summary_bold ,'scores'=>$scores, 'fullreview'=>$fullreview]);
+		// return View::make('hotel',['info'=>$info, 'summary'=>$summary_bold ,'scores'=>$scores, 'fullreview'=>$fullreview]);
+		return View::make('hotel',['info'=>$info, 'summary'=>$summary ,'scores'=>$scores, 'fullreview'=>$fullreview]);
 	}
 
 	public static function boldKeyword($summary){

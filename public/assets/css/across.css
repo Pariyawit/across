@@ -137,7 +137,7 @@ h2.index{
 	list-style: none;
 }
 
-.hotel li:before{
+/*.hotel li:before{
 	content: '"';
 	font-size: 1em;
 }
@@ -146,7 +146,7 @@ h2.index{
 	content: '"';
 	font-size: 1em;
 }
-
+*/
 
 .search{
 	font-family: 'Raleway', sans-serif;
@@ -215,4 +215,17 @@ h2.index{
 #explain{
 	text-align: right;
 	font-size: 1em;
+}
+
+button.pop{
+	margin: 3px;
+	font-style: italic;
+	list-style: none;
+	color: #000000;
+	white-space: normal;
+	text-align: left;
+}
+
+.popover{
+	max-width: 100%;
 }

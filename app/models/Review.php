@@ -14,15 +14,14 @@ class Review extends Moloquent{
 			$tmp = "";
 			foreach ($comments as $comment) {
 				// var_dump($comment);
-				if($comment == $review){
-					$comment = "<b>".$comment."</b>";
+				if(strpos($comment,trim($review))!==false  and strpos($review,trim($comment))!==false){
+					$comment = "<strong>".$comment."</strong>";
 				}
 				$tmp = $tmp." ".$comment;
 			}
 			$reviewer['review'] = $tmp;
 			array_push($output, $reviewer);
 		}
-		// var_dump($output);
 		return $output;
 	}
 }

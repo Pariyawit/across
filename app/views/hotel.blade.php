@@ -26,7 +26,19 @@
 					<ul>
 						@foreach ($summary['cleanliness'] as $s)
 							<li class="summary">
-								{{$s}}
+								<button type="button" class="btn btn-link pop" 
+								data-container="body" data-toggle="popover" data-html="true" 
+								data-trigger="focus"
+								data-placement="bottom" data-content="
+								{{$fullreview[$s][0]['review']}}<br><br>
+									<em>
+									{{$fullreview[$s][0]['name']}} [{{$fullreview[$s][0]['nationality']}}]<br>
+									{{$fullreview[$s][0]['reviewDate']}}<br>
+									{{$fullreview[$s][0]['source']}}
+									</em>
+									">
+								  {{$s}}
+								</button>
 							</li>
 						@endforeach
 					</ul>

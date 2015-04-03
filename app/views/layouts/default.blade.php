@@ -70,6 +70,10 @@
 		<script type="text/javascript">
  			var images = ['pic/bg-1.jpg','pic/bg-2.jpg','pic/bg-3.jpg','pic/bg-4.jpg','pic/bg-5.jpg','pic/bg-6.jpg'];
  			$('body').css({'background-image': 'url(assets/'+images[Math.floor(Math.random() * images.length)] + ')'});
+
+ 			$(function () {
+			  $('[data-toggle="popover"]').popover()
+			})
 		</script>
 	
 	</body>
