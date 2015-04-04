@@ -4,9 +4,15 @@
 
 <div class="hotel jumbotron wow fadeIn">
 {{-- <div class="container"> --}}
+
 	<div class="row">
-		<h3>{{$info['name']}}</h3>
-		<h4>{{$info['address']}}</h4>
+		<div class="col-sm-1" id="head-score">
+			<button class="btn">{{number_format($info['value']['total_score'],2)}}</button>
+		</div>
+		<div class="col-sm-11">
+			<h3>{{$info['name']}}</h3>
+			<h4>{{$info['address']}}</h4>
+		</div>
 	</div>
 	<div class="row">
 		<table class="table">
@@ -34,13 +40,13 @@
 									  <div class="modal-dialog">
 										<div class="modal-content">
 										  <div class="modal-body">
-											{{$s['full'][0]['review']}}
+											{{$s['full']['review']}}
 										  </div>
 										  <div class="modal-footer">
-										  	{{$s['full'][0]['name']}}
-										  	{{$s['full'][0]['reviewDate']}}
-										  	{{$s['full'][0]['nationality']}}
-										  	(from {{$s['full'][0]['source']}}.com)
+										  	{{$s['full']['name']}}
+										  	{{$s['full']['reviewDate']}}
+										  	{{$s['full']['nationality']}}
+										  	(from {{$s['full']['source']}}.com)
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										  </div>
 										</div>
@@ -66,13 +72,13 @@
 									  <div class="modal-dialog">
 										<div class="modal-content">
 										  <div class="modal-body">
-											{{$s['full'][0]['review']}}
+											{{$s['full']['review']}}
 										  </div>
 										  <div class="modal-footer">
-										  	{{$s['full'][0]['name']}}
-										  	{{$s['full'][0]['reviewDate']}}
-										  	{{$s['full'][0]['nationality']}}
-										  	(from {{$s['full'][0]['source']}}.com)
+										  	{{$s['full']['name']}}
+										  	{{$s['full']['reviewDate']}}
+										  	{{$s['full']['nationality']}}
+										  	(from {{$s['full']['source']}}.com)
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										  </div>
 										</div>
@@ -98,13 +104,13 @@
 									  <div class="modal-dialog">
 										<div class="modal-content">
 										  <div class="modal-body">
-											{{$s['full'][0]['review']}}
+											{{$s['full']['review']}}
 										  </div>
 										  <div class="modal-footer">
-										  	{{$s['full'][0]['name']}}
-										  	{{$s['full'][0]['reviewDate']}}
-										  	{{$s['full'][0]['nationality']}}
-										  	(from {{$s['full'][0]['source']}}.com)
+										  	{{$s['full']['name']}}
+										  	{{$s['full']['reviewDate']}}
+										  	{{$s['full']['nationality']}}
+										  	(from {{$s['full']['source']}}.com)
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										  </div>
 										</div>
@@ -130,13 +136,13 @@
 									  <div class="modal-dialog">
 										<div class="modal-content">
 										  <div class="modal-body">
-											{{$s['full'][0]['review']}}
+											{{$s['full']['review']}}
 										  </div>
 										  <div class="modal-footer">
-										  	{{$s['full'][0]['name']}}
-										  	{{$s['full'][0]['reviewDate']}}
-										  	{{$s['full'][0]['nationality']}}
-										  	(from {{$s['full'][0]['source']}}.com)
+										  	{{$s['full']['name']}}
+										  	{{$s['full']['reviewDate']}}
+										  	{{$s['full']['nationality']}}
+										  	(from {{$s['full']['source']}}.com)
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										  </div>
 										</div>
@@ -163,13 +169,13 @@
 									  <div class="modal-dialog">
 										<div class="modal-content">
 										  <div class="modal-body">
-											{{$s['full'][0]['review']}}
+											{{$s['full']['review']}}
 										  </div>
 										  <div class="modal-footer">
-										  	{{$s['full'][0]['name']}}
-										  	{{$s['full'][0]['reviewDate']}}
-										  	{{$s['full'][0]['nationality']}}
-										  	(from {{$s['full'][0]['source']}}.com)
+										  	{{$s['full']['name']}}
+										  	{{$s['full']['reviewDate']}}
+										  	{{$s['full']['nationality']}}
+										  	(from {{$s['full']['source']}}.com)
 											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 										  </div>
 										</div>
