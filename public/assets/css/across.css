@@ -248,3 +248,11 @@ position: absolute;
 	top: 50%;
 	margin-top: -250px;
 } 
+
+.modal-body{
+	font-style: normal;
+}
+
+.modal-footer{
+	font-style: normal;
+}
