@@ -26,19 +26,26 @@
 					<ul>
 						@foreach ($summary['cleanliness'] as $s)
 							<li class="summary">
-								<button type="button" class="btn btn-link pop" 
-								data-container="body" data-toggle="popover" data-html="true" 
-								data-trigger="focus"
-								data-placement="bottom" data-content="
-								{{$fullreview[$s][0]['review']}}<br><br>
-									<em>
-									{{$fullreview[$s][0]['name']}} [{{$fullreview[$s][0]['nationality']}}]<br>
-									{{$fullreview[$s][0]['reviewDate']}}<br>
-									{{$fullreview[$s][0]['source']}}
-									</em>
-									">
-								  {{$s}}
-								</button>
+								  "{{$s['bold']}}"
+								  <button type="button" class="btn btn-link" data-toggle="modal" data-target="#{{$s['id']}}">
+									  more
+									</button>
+									<div class="modal fade" id="{{$s['id']}}" tabindex="-1" role="dialog">
+									  <div class="modal-dialog">
+										<div class="modal-content">
+										  <div class="modal-body">
+											{{$s['full'][0]['review']}}
+										  </div>
+										  <div class="modal-footer">
+										  	{{$s['full'][0]['name']}}
+										  	{{$s['full'][0]['reviewDate']}}
+										  	{{$s['full'][0]['nationality']}}
+										  	(from {{$s['full'][0]['source']}}.com)
+											<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+										  </div>
+										</div>
+									  </div>
+									</div>
 							</li>
 						@endforeach
 					</ul>
@@ -51,7 +58,7 @@
 					<ul>
 						@foreach ($summary['comfort'] as $s)
 							<li class="summary">
-								{{$s}}
+								{{$s['bold']}}
 							</li>
 						@endforeach
 					</ul>
@@ -64,7 +71,7 @@
 					<ul>
 						@foreach ($summary['location'] as $s)
 							<li class="summary">
-								{{$s}}
+								{{$s['bold']}}
 							</li>
 						@endforeach
 					</ul>
@@ -77,7 +84,7 @@
 					<ul>
 						@foreach ($summary['staff'] as $s)
 							<li class="summary">
-								{{$s}}
+								{{$s['bold']}}
 							</li>
 						@endforeach
 					</ul>
@@ -91,7 +98,7 @@
 					<ul>
 						@foreach ($summary['value'] as $s)
 							<li class="summary">
-								{{$s}}
+								{{$s['bold']}}
 							</li>
 						@endforeach
 					</ul>

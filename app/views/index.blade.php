@@ -3,8 +3,8 @@
 @section('content')
 
 {{-- <div class="wow slideInUp"> --}}
-<h1 class="index wow slideInUp" data-wow-duration="2s">ACROSS<h1>
-	<h2 class="index wow slideInUp" data-wow-duration="2s">Accomodation Review Summarization System</h2>
+<h1 class="index wow slideInUp" data-wow-duration="2s">ACRoSS<h1>
+	<h2 class="index wow slideInUp" data-wow-duration="2s">Accommodation Review Summarization System</h2>
 	{{-- <h2 class="index">ACCOMODATION REVIEW SUMMARIZATION SYSTEM</h2> --}}
 <div>
 <div class="index jumbotron transparent wow fadeIn">

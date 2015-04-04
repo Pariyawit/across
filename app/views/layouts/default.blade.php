@@ -12,7 +12,7 @@
 		<link href='http://fonts.googleapis.com/css?family=Raleway:700,400' rel='stylesheet' type='text/css'>
 		<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300italic' rel='stylesheet' type='text/css'>
 		
-		<title>ACROSS</title>
+		<title>ACRoSS</title>
 
 		<!-- Bootstrap core CSS -->
 		
@@ -26,7 +26,7 @@
  		<nav class="navbar navbar-inverse navbar-fixed-top wow fadeInDown" role="navigation">
 			<div class="container">
 				<div class="navbar-header">
-					<a class="navbar-brand" href="/">ACROSS</a>
+					<a class="navbar-brand" href="/">ACRoSS</a>
 				</div>
 
 				<div class="navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -53,9 +53,9 @@
 			@yield('content')
 
 			<!-- Site footer -->
-			<footer class="footer">
+			{{-- <footer class="footer">
 				<p>&copy; Company 2014</p>
-			</footer>
+			</footer> --}}
 
 		</div> <!-- /container -->
 
